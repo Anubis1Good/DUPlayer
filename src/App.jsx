@@ -1,29 +1,27 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import TestAudio from './component/TestAudio';
-import sendRequest from './func/sendReq';
 
-const method = 'GET'
-const url = 'https://cloud-api.yandex.net/v1/disk/resources?path=%2FMp3Player%2F'
-const headers = {
-  'Accept': 'application/json',
-  'Authorization': 'OAuth AQAAAAA1HLYsAADLW7CCIJv7GUv1v9u8ia5tjpM'
-}
+const MainPage = lazy(() => import('./pages/MainPage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const ErrorPage = lazy(() => import('./pages/ErrorPage'));
+
+
+
 
 function App() {
-  useEffect(()=>{
-    fetch(url,{
-      method,
-      headers
-    })
-      .then(response => response.json())
-      .then(json => console.log(json))
-  },[])
   return (
-    <div className="App" >
-     <TestAudio/>
-    </div >
-  );
+    <Router>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+        <Route path="/" element={<MainPage/>} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="*" element={<ErrorPage/>} />
+      </Routes>
+    </Suspense>
+  </Router>
+  )
+  
 }
 
 export default App;

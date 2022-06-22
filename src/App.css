@@ -1,3 +1,20 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
 body {
   background-color: #609589;
+  background-image: url('../public/backgroundDU.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+
+main {
+  min-height: 100%;
 }

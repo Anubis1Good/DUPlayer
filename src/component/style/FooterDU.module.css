@@ -1,0 +1,13 @@
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+}
+
+
+
+a:hover {
+  text-shadow: 3px 3px 2px white;
+}

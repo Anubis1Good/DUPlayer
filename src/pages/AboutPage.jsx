@@ -1,9 +1,16 @@
 import React from 'react';
+import FooterDU from '../component/FooterDU';
+import HeaderDU from '../component/HeaderDU';
 
 function AboutPage() {
-  return ( <div>
+  return ( 
+    
+  <div>
+    <HeaderDU/>
     <h1>About</h1>
-  </div> );
+    <FooterDU/>
+  </div> 
+  );
 }
 
 export default AboutPage;

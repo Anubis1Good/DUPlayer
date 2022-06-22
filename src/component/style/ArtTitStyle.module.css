@@ -1,0 +1,17 @@
+.artistTitle {
+  display:inline-block;
+  background-color: rgb(109, 30, 30);
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+}
+.titleh2 {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  color: white;
+  letter-spacing: 2px;
+}
+.imgArtist {
+  display: block;
+}

@@ -1,5 +1,5 @@
 const method = 'GET'
-const url = 'https://cloud-api.yandex.net/v1/disk/resources?path=%2FMp3Player%2F'
+const url = 'https://cloud-api.yandex.net/v1/disk/resources?path=%2FMp3Player&fields=_embedded.items'
 
 const headers = {
   'Accept': 'application/json',
@@ -13,7 +13,7 @@ const [data, setData] = useState({})
     })
       .then(response => response.json())
       .then(json => {
-        setData(json)
+        setData(json);
         console.log(data)
       })
   }, [])

@@ -3,8 +3,8 @@
   margin: 0px;
 }
 body {
-  background-color: #609589;
-  background-image: url('../public/backgroundDU.jpg');
+  background-color: #74c8f8;
+  /* background-image: url('../public/backgroundDU.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0px;
@@ -17,4 +17,10 @@ html {
 
 main {
   min-height: 100%;
+}
+
+.player-name-song {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
 }

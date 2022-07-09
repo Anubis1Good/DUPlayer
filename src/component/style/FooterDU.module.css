@@ -4,8 +4,11 @@ footer {
   bottom: 0px;
   width: 100%;
   height: auto;
+  opacity: 0.9;
+  text-align: end;
+  
 }
-
+ 
 
 
 a:hover {

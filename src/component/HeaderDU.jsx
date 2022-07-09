@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 function HeaderDU() {
   return (
     <header>
-      <Link to="/">Главная</Link>
-      <Link to="/about">О проекте</Link>
+      <h1>Doom Uggi Player</h1>
     </header>
   );
 }
